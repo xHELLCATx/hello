@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcup icon" href="иконка1.ico" type="image/x-con">
+    <meta charset="UTF-8">
+    <title>Запись на курсы по програмированию</title>
+</head>
+<body background="програмирование1.jpg">
+    <h1>Выбор языков для изучения</h1>
+    <form action="Выбор языков.php" method="post">
+        <p>Выберите языки, которые вы хотели бы изучать:</p>
+        <input type="checkbox" id="Python" name="languages[]" value="Python">
+        <label for="Python">Python</label><br>
+
+        <input type="checkbox" id="Java" name="languages[]" value="Java">
+        <label for="Java">Java</label><br>
+
+        <input type="checkbox" id="C++" name="languages[]" value="C++">
+        <label for="C++">C++</label><br>
+
+        <input type="checkbox" id="C Sharp" name="languages[]" value="C Sharp">
+        <label for="C Sharp">C Sharp</label><br>
+
+        <input type="submit" value="Выбрать языки">
+    </form>
+<hr>
+    <br>
+    <h1>Информация от ученика</h1>
+    <form method="post">
+        <label for="Ваши знания">Опишите свои текущие знания:</label>
+        <textarea id="Ваши знания" name="Ваши знания" rows="4" cols="50" required></textarea><br>
+<hr>
+        <br>
+        <label for="Формат обучения">Выберите формат обучения:</label>
+        <select id="Формат обучения" name="Формат обучения" required>
+            <option value="online">Онлайн</option>
+            <option value="offline">Офлайн</option>
+        </select>
+        <input type="submit" value="Отправить информацию">
+    </form>
+
+</body>
+</html>
